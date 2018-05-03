@@ -1,0 +1,8 @@
+<div class="print-text-block">
+  <p>Введите свой текст в поле для ввода ниже(рекомендуется не более 150 слов):</p>
+  <textarea class="usertext" maxlength="2000" placeholder="Введите текст..."
+  [(ngModel)]="userInputText"></textarea>
+  <div class="btn-container">
+      <button class="btnconfirm" (click)="getFormattedText()">Ввод</button>
+  </div>
+</div>

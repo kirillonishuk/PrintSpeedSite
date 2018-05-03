@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+#game-rules{
+    display: flex;
+}
+h4.mode-title {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-bottom: 12px;
+    color: #396afc;
+    text-transform: uppercase;
+    text-align: center;
+}
+p {
+    font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    color: rgb(56, 76, 83);
+    text-align: justify;
+}
+#first-rules, #second-rules{
+    padding: 0 25px;
+    width: 50%;
+    flex-direction: column;
+    align-self: stretch;
+}
+
+#rules-border{
+    border-right: 2px solid #396afc;
+    opacity: 0.32;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 600px){
+    div#game-rules{
+        display: inline-flex;
+        flex-direction: column;
+    }
+    div#first-rules, div#second-rules{
+        padding: 0 25px;
+        width: 100%;
+        align-self: stretch;
+        padding-bottom: 35px;
+    }
+    div#rules-border{
+        margin-top: 0;
+        align-self: center;
+        width: 85%;
+        border-top: 2px solid #396afc;
+    }
+    .mode-title{
+        margin-top: 10px;
+        line-height: 14px;
+    }
+}

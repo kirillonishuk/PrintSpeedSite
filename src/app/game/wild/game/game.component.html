@@ -1,0 +1,19 @@
+<div class="container">
+  <p id="clarification">Игра начинается сразу после ввода первого символа в поле для ввода,
+    расположенное ниже блока с вводимыми словами.
+  <span id="important-text">Для ввода слова для проверки необходимо нажать ПРОБЕЛ(SPACE)!</span></p>
+  <div class="text-container">
+    <span id="copleted-words">{{copletedWords}}</span>
+    <span id="completed-path">{{completedPath}}</span><span 
+    id="error-word">{{errorWord}}</span><span id="current-word">{{currentWord}}</span>
+    <span id="remain-words">{{remainWords}}</span>
+  </div>
+  <div class="input-container">
+    <input type="text" id="text" [(ngModel)]="userInputText" (input)="onInputText()"/>
+    <button id="reset">reset</button>
+  </div>
+  <div class="result">
+    <div><span id="time">Время: </span><span id="time-value">{{gameTime}}</span><span id="time-s">s</span></div>
+    <div><span id="errors">Ошибок(доделать): </span><span id="errors-value">0</span></div>
+  </div>
+</div>

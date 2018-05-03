@@ -1,0 +1,90 @@
+#clarification{
+    margin-left: 15px;
+    font-family: "lucida sans unicode", "lucida grande", sans-serif;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0.3;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+}
+.text-container{
+    text-align: justify;
+    padding: 5px;
+    margin: 0 auto;
+    width: 70%;
+    min-width: 200px;
+    height: auto;
+
+    font-family: "lucida sans unicode", "lucida grande", sans-serif;
+    font-size: 14px;
+    border: 3px solid #396afc6c;
+    border-radius: 3px;
+}
+.input-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+    margin-top: 20px;
+}
+#text{
+    font-size: 16px;
+    padding-left: 5px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #396afc6c;
+}
+#reset{
+    margin-left: 10px;
+    width: 65px;
+    height: 34px;
+
+    outline: none;
+    background-color: white;
+    border: 2px solid #396afc;
+    color: #396afc;
+    cursor: pointer;
+}
+#reset:hover{
+    background-color: #396afc;
+    color: white;
+}
+.result{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 10px auto 0 auto;
+    width: 70%;
+
+    font-family: "lucida sans unicode", "lucida grande", sans-serif;
+    font-size: 16px;
+    font-weight: 550;
+    line-height: 40px;
+    color: #396afc;
+}
+#errors-value, #time-value, #time-s{
+    color: rgba(223, 89, 89, 0.856);
+}
+#copleted-words{
+    color: green;
+    opacity: 0.5;
+}
+#completed-path{
+    color: green;
+    font-weight: 550;
+}
+#error-word{
+    color: red;
+    font-weight: 550;
+}
+#current-word{
+    font-weight: 550;
+}
+#remain-words{
+    color: rgba(172, 167, 167, 0.849);
+}
+#important-text{
+    font-weight: bold;
+}
